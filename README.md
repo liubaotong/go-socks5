@@ -41,7 +41,7 @@
 ## 安装说明
 
 1. 获取源码：
-   git clone https://github.com/yourusername/socks5proxy.git
+   git clone https://github.com/liubaotong/socks5proxy.git
    cd socks5proxy/server
 
 2. 安装依赖：
@@ -162,15 +162,6 @@
    - 考虑配置 TLS 加密
    - 定期更新系统和依赖
 
-## 代码结构
-server/
-├── main.go        // 程序入口，参数解析
-├── config.go      // 配置相关定义
-├── server.go      // 服务器核心实现
-├── handler.go     // 请求处理逻辑
-├── go.mod         // 依赖管理
-└── README.md      // 项目文档
-
 ## 开发计划
 
 ### 即将支持的功能
@@ -186,7 +177,7 @@ MIT License
 
 ## 作者
 
-[Your Name]
+[liubaotong <liu.baotong@qq.com>]
 
 ## 版本历史
 
