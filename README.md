@@ -41,19 +41,19 @@
 ## 安装说明
 
 1. 获取源码：
-   git clone https://github.com/liubaotong/socks5proxy.git
-   cd socks5proxy/server
+   git clone https://github.com/liubaotong/go-socks5.git
+   cd go-socks5/server
 
 2. 安装依赖：
    go mod tidy
 
 3. 编译程序：
-   go build -o socks5proxy
+   go build
 
 ## 使用说明
 
 ### 基本用法
-直接运行程序：./socks5proxy
+直接运行程序：./server
 
 默认配置：
 - 监听地址：127.0.0.1
