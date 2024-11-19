@@ -41,8 +41,8 @@
 ## 安装说明
 
 1. 获取源码：
-   git clone https://github.com/liubaotong/go-socks5.git
-   cd go-socks5/server
+   - git clone https://github.com/liubaotong/go-socks5.git
+   - cd go-socks5/server
 
 2. 安装依赖：
    go mod tidy
@@ -62,15 +62,15 @@
 - 缓冲区大小：32KB
 
 ### 命令行参数
--host: 监听地址（默认：127.0.0.1）
--port: 监听端口（默认：1080）
--timeout: 连接超时时间（默认：30s）
--buffer: 缓冲区大小（默认：32KB）
--retries: 连接重试次数（默认：3）
--retry-delay: 重试间隔时间（默认：1s）
--dial-timeout: 连接建立超时（默认：10s）
--ipv6: 是否启用 IPv6（默认：true）
--log-level: 日志级别（默认：info）
+- -host: 监听地址（默认：127.0.0.1）
+- -port: 监听端口（默认：1080）
+- -timeout: 连接超时时间（默认：30s）
+- -buffer: 缓冲区大小（默认：32KB）
+- -retries: 连接重试次数（默认：3）
+- -retry-delay: 重试间隔时间（默认：1s）
+- -dial-timeout: 连接建立超时（默认：10s）
+- -ipv6: 是否启用 IPv6（默认：true）
+- -log-level: 日志级别（默认：info）
 
 ### 使用示例
 1. 监听所有网络接口：
@@ -138,13 +138,13 @@
    * hard nofile 65535
 
 2. 内核参数优化：
-   编辑 /etc/sysctl.conf
-   net.ipv4.tcp_fin_timeout = 30
-   net.ipv4.tcp_keepalive_time = 1200
-   net.ipv4.tcp_max_syn_backlog = 8192
-   net.ipv4.tcp_max_tw_buckets = 5000
-   net.ipv4.tcp_tw_reuse = 1
-   net.ipv4.tcp_fastopen = 3
+   - 编辑 /etc/sysctl.conf
+   - net.ipv4.tcp_fin_timeout = 30
+   - net.ipv4.tcp_keepalive_time = 1200
+   - net.ipv4.tcp_max_syn_backlog = 8192
+   - net.ipv4.tcp_max_tw_buckets = 5000
+   - net.ipv4.tcp_tw_reuse = 1
+   - net.ipv4.tcp_fastopen = 3
 
 ### 安全建议
 1. 访问控制：
